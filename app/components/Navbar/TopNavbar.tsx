@@ -1,19 +1,11 @@
 "use client";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { useState } from "react";
 
 const TopNavbar = () => {
-  const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-
   return (
     <nav className="flex justify-between items-center text-white bg-black h-14 p-6">
-      <GiHamburgerMenu
-        onClick={() => {
-          setIsSideBarOpen(!isSideBarOpen);
-        }}
-        className="h-6 w-5 cursor-pointer lg:hidden"
-      />
+      <GiHamburgerMenu className="h-6 w-5 cursor-pointer lg:hidden" />
       <h1 className="font-extrabold text-xl md:flex cursor-pointer">
         audiophile
       </h1>

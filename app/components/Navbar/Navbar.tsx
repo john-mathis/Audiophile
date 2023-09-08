@@ -1,12 +1,13 @@
-import React from "react";
 import TopNavbar from "./TopNavbar";
-import SideNavbar from "./SideNavbar";
+import NavbarSlider from "./NavbarSlider";
+import { useState } from "react";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
+  const [isSliderOpen, setIsSliderOpen] = useState<boolean>(false);
   return (
     <>
       <TopNavbar />
-      <SideNavbar />
+      <NavbarSlider />
     </>
   );
 };
