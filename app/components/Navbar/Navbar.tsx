@@ -6,8 +6,11 @@ const Navbar: React.FC = () => {
   const [isSliderOpen, setIsSliderOpen] = useState<boolean>(false);
   return (
     <>
-      <TopNavbar />
-      <NavbarSlider setIsSliderOpen={setIsSliderOpen} />
+      <TopNavbar
+        isSliderOpen={isSliderOpen}
+        setIsSliderOpen={setIsSliderOpen}
+      />
+      <NavbarSlider isSliderOpen={isSliderOpen} />
     </>
   );
 };
