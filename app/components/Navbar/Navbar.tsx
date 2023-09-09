@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <TopNavbar />
-      <NavbarSlider />
+      <NavbarSlider setIsSliderOpen={setIsSliderOpen} />
     </>
   );
 };

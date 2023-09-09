@@ -1,13 +1,11 @@
-import Navbar from "./components/Navbar/TopNavbar";
+"use client";
+import Navbar from "./components/Navbar/Navbar";
 import "../app/globals.css";
-import NavbarSlider from "./components/Navbar/NavbarSlider";
-import TopNavbar from "./components/Navbar/TopNavbar";
 
 export default function Home() {
   return (
     <main>
-      <TopNavbar />
-      <NavbarSlider />
+      <Navbar />
     </main>
   );
 }

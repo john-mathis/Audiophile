@@ -21,6 +21,4 @@ const TopNavbar = () => {
   );
 };
 
-const navItems = {};
-
 export default TopNavbar;
