@@ -24,7 +24,7 @@ const TopNavbar: React.FC<NavbarProps> = ({
       <h1 className="font-extrabold text-xl md:flex cursor-pointer">
         audiophile
       </h1>
-      <ul className="text-white justify-between w-96 hidden sm:hidden md:hidden lg:flex">
+      <ul className="text-white justify-between w-[30rem] hidden sm:hidden md:hidden lg:flex">
         {NavItems.map((items) => {
           return (
             <li
@@ -37,7 +37,7 @@ const TopNavbar: React.FC<NavbarProps> = ({
         })}
       </ul>
 
-      <AiOutlineShoppingCart className="h-6 w-5 cursor-pointer" />
+      <AiOutlineShoppingCart className="h-6 w-5 cursor-pointer hover:text-[--dark-orange]" />
     </nav>
   );
 };
