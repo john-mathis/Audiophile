@@ -11,7 +11,7 @@ const NavbarSlider: React.FC<NavbarProps> = ({ isSliderOpen }) => {
       className={
         isSliderOpen
           ? "bg-black text-black w-48 h-screen lg:hidden transition-all ease-in-out duration-500 transform"
-          : "hidden"
+          : "ml-[-10rem] w-0 transition-all ease-in-out duration-500 transform h-screen"
       }
     >
       <ul className="text-white pl-6 pt-12 flex flex-col justify-between h-52">
@@ -19,7 +19,7 @@ const NavbarSlider: React.FC<NavbarProps> = ({ isSliderOpen }) => {
           return (
             <li
               key={items}
-              className="uppercase cursor-pointer hover:text-[--dark-orange]"
+              className="uppercase cursor-pointer hover:text-[--dark-orange] w-fit"
             >
               {items}
             </li>
