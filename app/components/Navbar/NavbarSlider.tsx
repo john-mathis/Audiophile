@@ -10,8 +10,8 @@ const NavbarSlider: React.FC<NavbarProps> = ({ isSliderOpen }) => {
     <div
       className={
         isSliderOpen
-          ? "bg-black text-black w-48 h-screen lg:hidden transition-all ease-in-out duration-500 transform"
-          : "ml-[-10rem] w-0 transition-all ease-in-out duration-500 transform h-screen"
+          ? "absolute z-10 bg-black text-black w-48 h-screen lg:hidden transition-all ease-in-out duration-500 transform"
+          : "absolute ml-[-10rem] w-0 ease-in-out duration-500 transform h-screen"
       }
     >
       <ul className="text-white pl-6 pt-12 flex flex-col justify-between h-52">
