@@ -1,11 +1,10 @@
 import React from "react";
-import Image from "next/image";
 import CtaButton from "../common/CtaButton";
 
 const NewProduct = () => {
   return (
-    <div>
-      <p className="uppercase tracking-[.5rem] m-auto text-center">
+    <div className="mt-24 mb-32">
+      <p className="uppercase tracking-[.5rem] mx-auto mb-3 text-center">
         new product
       </p>
       <h1 className="uppercase m-auto text-center text-4xl w-80 md:w-96 tracking-wider font-semibold mb-4">
