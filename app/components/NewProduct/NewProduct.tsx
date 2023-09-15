@@ -3,7 +3,7 @@ import CtaButton from "../common/CtaButton";
 
 const NewProduct = () => {
   return (
-    <div className="mt-24 mb-32">
+    <div className="pt-24 pb-32 bg-black text-white">
       <p className="uppercase tracking-[.5rem] mx-auto mb-3 text-center">
         new product
       </p>
