@@ -6,7 +6,7 @@ import Earphones from "../../../public/assets/product-yx1-earphones/mobile/image
 
 const Categories = () => {
   return (
-    <div>
+    <div className="md:flex md:w-[43rem] md:m-auto md:justify-between">
       {categoryItems.map((item) => {
         return <Category img={item.img} category={item.category} />;
       })}

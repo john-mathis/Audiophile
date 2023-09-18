@@ -9,7 +9,7 @@ interface CategoryProps {
 
 const Category: React.FC<CategoryProps> = ({ img, category }) => {
   return (
-    <div className="relative bg-[--beige] mt-12 mb-16 w-80 h-40 mx-auto rounded">
+    <div className="relative bg-[--beige] mt-12 mb-16 w-80 md:w-52 h-40 mx-auto rounded">
       <div className="relative bottom-12">
         <Image className="relative w-28 m-auto" src={img} alt={category} />
         <p className="uppercase text-center text-sm font-bold">{category}</p>
