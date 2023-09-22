@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import "../app/globals.css";
 import NewProduct from "./components/NewProduct/NewProduct";
 import Categories from "./components/Categories/Categories";
+import ProductPreview from "./components/ProductPreview/ProductPreview";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <NewProduct />
       <Categories />
+      <ProductPreview />
     </main>
   );
 }
