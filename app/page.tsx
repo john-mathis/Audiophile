@@ -8,7 +8,6 @@ import ListItems from "../app/components/ProductPreview/ProductList";
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <NewProduct />
       <Categories />
       <ProductPreview props={ListItems} />

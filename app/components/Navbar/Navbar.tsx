@@ -1,3 +1,4 @@
+"use client";
 import TopNavbar from "./TopNavbar";
 import NavbarSlider from "./NavbarSlider";
 import { useState } from "react";
