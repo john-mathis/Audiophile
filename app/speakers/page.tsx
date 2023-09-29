@@ -5,12 +5,10 @@ import ListItems from "../components/ProductPreview/ProductList";
 import Categories from "../components/Categories/Categories";
 
 const page = () => {
-  const headphones = ListItems.filter(
-    (items) => items.category === "Headphones"
-  );
+  const speakers = ListItems.filter((items) => items.category === "Speakers");
   return (
     <section>
-      <ProductPreview props={headphones} />
+      <ProductPreview props={speakers} />
       <Categories />
     </section>
   );
