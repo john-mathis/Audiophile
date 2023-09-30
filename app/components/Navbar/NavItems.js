@@ -1,3 +1,3 @@
-const navItems = ["Home", "Headphones", "Speakers", "Earphones"];
+const navItems = ["home", "headphones", "speakers", "earphones"];
 
 export default navItems;

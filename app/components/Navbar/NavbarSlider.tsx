@@ -1,5 +1,6 @@
-import React, { Dispatch } from "react";
+import React from "react";
 import NavItems from "./NavItems";
+import Link from "next/link";
 
 interface NavbarProps {
   isSliderOpen: any;
@@ -17,12 +18,14 @@ const NavbarSlider: React.FC<NavbarProps> = ({ isSliderOpen }) => {
       <ul className="text-white pl-6 pt-12 flex flex-col justify-between h-52">
         {NavItems.map((items) => {
           return (
-            <li
-              key={items}
-              className="uppercase cursor-pointer hover:text-[--dark-orange] w-fit"
-            >
-              {items}
-            </li>
+            <Link href={items === "home" ? "/" : items}>
+              <li
+                key={items}
+                className="uppercase cursor-pointer hover:text-[--dark-orange] w-fit"
+              >
+                {items}
+              </li>
+            </Link>
           );
         })}
       </ul>

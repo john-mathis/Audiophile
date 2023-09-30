@@ -3,6 +3,7 @@ import { Dispatch, SetStateAction } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import NavItems from "./NavItems";
+import Link from "next/link";
 
 interface NavbarProps {
   isSliderOpen: any;
@@ -27,12 +28,14 @@ const TopNavbar: React.FC<NavbarProps> = ({
       <ul className="text-white justify-between w-[30rem] hidden sm:hidden md:hidden lg:flex">
         {NavItems.map((items) => {
           return (
-            <li
-              key={items}
-              className="uppercase cursor-pointer hover:text-[--dark-orange]"
-            >
-              {items}
-            </li>
+            <Link href={items === "home" ? "/" : items}>
+              <li
+                key={items}
+                className="uppercase cursor-pointer hover:text-[--dark-orange]"
+              >
+                {items}
+              </li>
+            </Link>
           );
         })}
       </ul>
