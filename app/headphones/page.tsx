@@ -3,6 +3,7 @@ import React from "react";
 import ProductPreview from "../components/ProductPreview/ProductPreview";
 import ListItems from "../components/ProductPreview/ProductList";
 import Categories from "../components/Categories/Categories";
+import BestAudio from "../components/BestAudio/BestAudio";
 
 const page = () => {
   const headphones = ListItems.filter(
@@ -12,6 +13,7 @@ const page = () => {
     <section>
       <ProductPreview props={headphones} />
       <Categories />
+      <BestAudio />
     </section>
   );
 };
