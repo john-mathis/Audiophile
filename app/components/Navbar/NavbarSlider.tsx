@@ -18,7 +18,7 @@ const NavbarSlider: React.FC<NavbarProps> = ({ isSliderOpen }) => {
       <ul className="text-white pl-6 pt-12 flex flex-col justify-between h-52">
         {NavItems.map((items) => {
           return (
-            <Link href={items === "home" ? "/" : items}>
+            <Link href={items === "home" ? "/" : items} key={items}>
               <li
                 key={items}
                 className="uppercase cursor-pointer hover:text-[--dark-orange] w-fit"

@@ -8,7 +8,13 @@ const Categories = () => {
   return (
     <div className="md:flex md:w-[43rem] md:m-auto md:justify-between">
       {categoryItems.map((item) => {
-        return <Category img={item.img} category={item.category} />;
+        return (
+          <Category
+            img={item.img}
+            category={item.category}
+            key={item.category}
+          />
+        );
       })}
     </div>
   );

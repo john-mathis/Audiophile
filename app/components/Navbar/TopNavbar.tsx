@@ -16,8 +16,6 @@ const TopNavbar: React.FC<NavbarProps> = ({
 }) => {
   return (
     <nav className="flex justify-between items-center text-white bg-black h-14 p-6">
-
-      
       {/* Responsible for opening the navbar menu */}
       <GiHamburgerMenu
         className="h-6 w-5 cursor-pointer lg:hidden"
@@ -35,10 +33,10 @@ const TopNavbar: React.FC<NavbarProps> = ({
       <ul className="text-white justify-between w-[30rem] hidden sm:hidden md:hidden lg:flex">
         {NavItems.map((items) => {
           return (
-            <Link href={items}>
+            <Link href={items} key={items}>
               <li
                 onClick={() => {
-                  console.log(isSliderOpen);
+                  console.log(1);
                 }}
                 key={items}
                 className="uppercase cursor-pointer hover:text-[--dark-orange]"
