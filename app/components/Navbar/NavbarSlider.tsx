@@ -1,12 +1,16 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import NavItems from "./NavItems";
 import Link from "next/link";
 
 interface NavbarProps {
   isSliderOpen: any;
+  setIsSliderOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-const NavbarSlider: React.FC<NavbarProps> = ({ isSliderOpen }) => {
+const NavbarSlider: React.FC<NavbarProps> = ({
+  isSliderOpen,
+  setIsSliderOpen,
+}) => {
   return (
     <div
       className={
@@ -22,6 +26,9 @@ const NavbarSlider: React.FC<NavbarProps> = ({ isSliderOpen }) => {
               <li
                 key={items}
                 className="uppercase cursor-pointer hover:text-[--dark-orange] w-fit"
+                onClick={() => {
+                  setIsSliderOpen(!isSliderOpen);
+                }}
               >
                 {items}
               </li>

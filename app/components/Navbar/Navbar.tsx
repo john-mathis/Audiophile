@@ -11,7 +11,10 @@ const Navbar: React.FC = () => {
         isSliderOpen={isSliderOpen}
         setIsSliderOpen={setIsSliderOpen}
       />
-      <NavbarSlider isSliderOpen={isSliderOpen} />
+      <NavbarSlider
+        isSliderOpen={isSliderOpen}
+        setIsSliderOpen={setIsSliderOpen}
+      />
     </>
   );
 };

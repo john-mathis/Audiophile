@@ -35,9 +35,6 @@ const TopNavbar: React.FC<NavbarProps> = ({
           return (
             <Link href={items} key={items}>
               <li
-                onClick={() => {
-                  console.log(1);
-                }}
                 key={items}
                 className="uppercase cursor-pointer hover:text-[--dark-orange]"
               >
