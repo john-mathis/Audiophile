@@ -5,7 +5,7 @@ import Categories from "../components/Categories/Categories";
 
 const page = () => {
   const earphones = ListItems.filter((items) => items.category === "Earphones");
-  console.log(earphones);
+
   return (
     <section>
       <ProductPreview props={earphones} />
