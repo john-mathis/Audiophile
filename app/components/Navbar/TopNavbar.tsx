@@ -33,7 +33,7 @@ const TopNavbar: React.FC<NavbarProps> = ({
       <ul className="text-white justify-between w-[30rem] hidden sm:hidden md:hidden lg:flex">
         {NavItems.map((items) => {
           return (
-            <Link href={items} key={items}>
+            <Link href={items === "home" ? "/" : items} key={items}>
               <li
                 key={items}
                 className="uppercase cursor-pointer hover:text-[--dark-orange]"

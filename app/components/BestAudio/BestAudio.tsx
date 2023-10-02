@@ -9,7 +9,7 @@ const BestAudio = () => {
         src={BestGearImage.src}
         alt=""
       />
-      <div className="md:w-[35rem] mx-auto md:my-12 order-1 text-center lg:text-left lg:p-8">
+      <div className="md:w-[35rem] xl:w-[27rem] mx-auto md:my-12 order-1 text-center lg:text-left lg:p-8">
         <p className="uppercase text-3xl md:text-4xl my-4 font-semibold">
           Bringing you the <span className="text-[--dark-orange]">best </span>
           audio gear
