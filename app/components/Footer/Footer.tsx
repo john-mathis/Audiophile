@@ -7,19 +7,22 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <section className="bg-black text-white px-6 py-10 text-center md:text-left mt-24">
-      <p className="text-2xl font-bold mb-8 border-t-2">audiophile </p>
-      <div className="flex flex-col md:flex-row justify-between md:w-[26rem]	 ">
-        {navItems.map((items) => (
-          <Link
-            className="my-2 font-bold"
-            href={items === "home" ? "/" : items}
-          >
-            {items.toLocaleUpperCase()}
-          </Link>
-        ))}
+    <section className="relative bg-black text-white px-6 py-10 text-center md:text-left mt-24">
+      <div className="border-t-4 w-24 mx-auto md:mx-0 absolute top-0 left-0 md:left-6 right-0 border-[--dark-orange]"></div>
+      <div className="lg:flex lg:justify-between">
+        <p className="text-2xl font-bold mb-8">audiophile </p>
+        <div className="flex flex-col md:flex-row justify-between md:w-[26rem]	 ">
+          {navItems.map((items) => (
+            <Link
+              className="my-2 font-bold"
+              href={items === "home" ? "/" : items}
+            >
+              {items.toLocaleUpperCase()}
+            </Link>
+          ))}
+        </div>
       </div>
-      <p className="my-8 text-base">
+      <p className="my-8 text-base md:w-[46rem]">
         Audiophile is an all in one stop to fulfill your audio needs. We're a
         small team of music lovers and sound specialists who are devoted to
         helping you get the most out of personal audio. Come and visit our demo
@@ -29,7 +32,7 @@ const Footer = () => {
       <div className="md:flex items-center md:justify-between md:mt-20">
         <p className="font-bold">Copyright 2021. All Rights Reserved</p>
 
-        <div className="flex mt-6 md:mt-0 m-auto justify-center">
+        <div className="flex mt-6 md:mt-0 m-auto md:m-0 justify-center">
           {footerIcons.map((icon) => (
             <span className="text-3xl mx-2 md:flex">{icon}</span>
           ))}
