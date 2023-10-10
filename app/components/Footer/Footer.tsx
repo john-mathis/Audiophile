@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <section className="relative bg-black text-white px-6 py-10 text-center md:text-left mt-24">
       <div className="max-w-[69rem] xl:m-auto">
-        <div className="border-t-4 w-24 mx-auto md:mx-0 absolute top-0 left-0 md:left-6  right-0 border-[--dark-orange]"></div>
+        <div className="relative bottom-10 border-t-4 w-24 mx-auto md:mx-0 border-[--dark-orange]"></div>
 
         <div className="lg:flex lg:justify-between lg:items-center">
           <p className="text-2xl font-bold mb-8 lg:mb-0">audiophile </p>
