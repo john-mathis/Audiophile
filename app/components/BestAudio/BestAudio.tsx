@@ -1,14 +1,32 @@
 import React from "react";
-import BestGearImage from "../../../public/assets/shared/mobile/image-best-gear.jpg";
+import BestGearSm from "../../../public/assets/shared/mobile/image-best-gear.jpg";
+import BestGearMed from "../../../public/assets/shared/tablet/image-best-gear.jpg";
+import BestGearLg from "../../../public/assets/shared/desktop/image-best-gear.jpg";
 
 const BestAudio = () => {
   return (
     <section className="w-80 md:w-[43rem] m-auto lg:flex lg:w-[60rem] xl:w-[69rem]">
-      <img
-        className="m-auto rounded-md order-2 lg:text-left lg:w-[33rem]"
-        src={BestGearImage.src}
-        alt=""
-      />
+      {/* Displays correct image based on screen size */}
+      <picture className="lg:order-3">
+        {/* Mobile Image */}
+        <img
+          className="m-auto rounded-md order-2 md:hidden lg:hidden xl:hidden"
+          src={BestGearSm.src}
+          alt=""
+        />
+        {/* Tablet Image */}
+        <img
+          className="m-auto rounded-md hidden md:flex"
+          src={BestGearMed.src}
+          alt=""
+        />
+        {/* Desktop Image */}
+        <img
+          className="m-auto rounded-md order-2 text-left w-[33rem] hidden lg:flex xl:flex"
+          src={BestGearLg.src}
+          alt=""
+        />
+      </picture>
       <div className="md:w-[35rem] xl:w-[27rem] mx-auto md:my-12 order-1 text-center lg:text-left lg:p-8">
         <p className="uppercase text-3xl md:text-4xl my-4 font-semibold">
           Bringing you the <span className="text-[--dark-orange]">best </span>
