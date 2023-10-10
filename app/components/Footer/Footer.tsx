@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between md:w-[26rem]">
             {navItems.map((items) => (
               <Link
-                className="my-2 font-bold"
+                className="my-2 font-bold hover:text-[--dark-orange]"
                 href={items === "home" ? "/" : items}
               >
                 {items.toLocaleUpperCase()}
@@ -26,7 +26,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <p className="my-8 text-base md:w-[46rem]">
+        <p className="my-8 text-base md:w-[46rem] lg:w-[37rem]">
           Audiophile is an all in one stop to fulfill your audio needs. We're a
           small team of music lovers and sound specialists who are devoted to
           helping you get the most out of personal audio. Come and visit our
@@ -39,7 +39,9 @@ const Footer = () => {
           {/* Maps over and displays each social media icon */}
           <div className="flex mt-6 md:mt-0 m-auto md:m-0 justify-center">
             {footerIcons.map((icon) => (
-              <span className="text-3xl mx-2 md:flex">{icon}</span>
+              <span className="text-3xl mx-2 md:flex cursor-pointer hover:text-[--dark-orange]">
+                {icon}
+              </span>
             ))}
           </div>
         </div>
