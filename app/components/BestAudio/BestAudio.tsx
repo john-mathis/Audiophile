@@ -16,7 +16,7 @@ const BestAudio = () => {
         />
         {/* Tablet Image */}
         <img
-          className="m-auto rounded-md hidden md:flex"
+          className="m-auto rounded-md hidden md:flex lg:hidden"
           src={BestGearMed.src}
           alt=""
         />
@@ -27,6 +27,7 @@ const BestAudio = () => {
           alt=""
         />
       </picture>
+
       <div className="md:w-[35rem] xl:w-[27rem] mx-auto md:my-12 order-1 text-center lg:text-left lg:p-8">
         <p className="uppercase text-3xl md:text-4xl my-4 font-semibold">
           Bringing you the <span className="text-[--dark-orange]">best </span>
