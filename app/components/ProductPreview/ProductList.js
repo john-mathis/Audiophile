@@ -1,15 +1,29 @@
-import HeadphoneOne from "../../../public/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg";
-import HeadphoneTwo from "../../../public/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg";
-import HeadphoneThree from "../../../public/assets/product-xx59-headphones/mobile/image-product.jpg";
-import SpeakerOne from "../../../public/assets/product-zx9-speaker/mobile/image-product.jpg";
-import SpeakerTwo from "../../../public/assets/product-zx7-speaker/mobile/image-product.jpg";
-import EarphoneOne from "../../../public/assets/product-yx1-earphones/mobile/image-product.jpg";
+import HeadphoneOne from "../../../public/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg";
+import HeadphoneOneMD from "../../../public/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg";
+import HeadphoneOneLG from "../../../public/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg";
+import HeadphoneTwo from "../../../public/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg";
+import HeadphoneTwoMD from "../../../public/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg";
+import HeadphoneTwoLG from "../../../public/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg";
+import HeadphoneThree from "../../../public/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg";
+import HeadphoneThreeMD from "../../../public/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg";
+import HeadphoneThreeLG from "../../../public/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg";
+import SpeakerOne from "../../../public/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg";
+import SpeakerOneMD from "../../../public/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg";
+import SpeakerOneLG from "../../../public/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg";
+import SpeakerTwo from "../../../public/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg";
+import SpeakerTwoMD from "../../../public/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg";
+import SpeakerTwoLG from "../../../public/assets/product-zx7-speaker/desktop/image-category-page-preview.jpg";
+import EarphoneOne from "../../../public/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg";
+import EarphoneOneMD from "../../../public/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg";
+import EarphoneOneLG from "../../../public/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg";
 
 const ListItems = [
   {
     id: 1,
     category: "Headphones",
     img: HeadphoneOne,
+    imgMD: HeadphoneOneMD,
+    imgLG: HeadphoneOneLG,
     title: "XX99 Mark II Headphones",
     new: "New Product",
     description:
@@ -19,6 +33,8 @@ const ListItems = [
     id: 2,
     category: "Headphones",
     img: HeadphoneTwo,
+    imgMD: HeadphoneTwoMD,
+    imgLG: HeadphoneTwoLG,
     title: "XX99 Mark I Headphones",
     new: null,
     description:
@@ -28,6 +44,8 @@ const ListItems = [
     id: 3,
     category: "Headphones",
     img: HeadphoneThree,
+    imgMD: HeadphoneThreeMD,
+    imgLG: HeadphoneThreeLG,
     title: "XX59 Headphones",
     new: null,
     description:
@@ -38,6 +56,8 @@ const ListItems = [
     id: 4,
     category: "Speakers",
     img: SpeakerOne,
+    imgMD: SpeakerOneMD,
+    imgLG: SpeakerOneLG,
     title: "ZX9 speaker",
     new: null,
     description:
@@ -47,6 +67,8 @@ const ListItems = [
     id: 5,
     category: "Speakers",
     img: SpeakerTwo,
+    imgMD: SpeakerTwoMD,
+    imgLG: SpeakerTwoLG,
     title: "ZX7 SPEAKER",
     new: null,
     description:
@@ -56,6 +78,8 @@ const ListItems = [
     id: 6,
     category: "Earphones",
     img: EarphoneOne,
+    imgMD: EarphoneOneMD,
+    imgLG: EarphoneOneLG,
     title: "YX1 WIRELESS EARPHONES",
     new: null,
     description:

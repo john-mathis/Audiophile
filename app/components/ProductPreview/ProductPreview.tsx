@@ -13,8 +13,23 @@ const ProductPreview: React.FC<ProductPreviewProps> = ({ props }) => {
       </h1>
       {props.map((info: any) => {
         return (
-          <div className="mb-24 w-80 m-auto" key={info.id}>
-            <img className="mb-6" src={info.img.src} />
+          <div className="mb-24 w-80 md:w-[43rem] m-auto" key={info.id}>
+            {/* Image container */}
+            <picture className="m-auto w-full">
+              <img
+                className="mb-6 md:hidden lg:hidden xl:hidden"
+                src={info.img.src}
+              />
+              <img
+                className="mb-6 hidden md:flex md:w-full  lg:hidden xl:hidden"
+                src={info.imgMD.src}
+              />
+              <img
+                className="mb-6 hidden lg:flex xl:flex"
+                src={info.imgLG.src}
+              />
+            </picture>
+
             <p className="text-center uppercase text-[--light-orange] mb-6 tracking-widest">
               {info.new ? info.new : ""}
             </p>
