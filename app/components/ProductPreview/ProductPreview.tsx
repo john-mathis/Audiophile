@@ -13,7 +13,7 @@ const ProductPreview: React.FC<ProductPreviewProps> = ({ props }) => {
       </h1>
       {props.map((info: any) => {
         return (
-          <div className="mb-24 w-80 md:w-[43rem] m-auto" key={info.id}>
+          <div className="mb-24 w-80 md:w-[43rem] m-auto lg:flex" key={info.id}>
             {/* Image container */}
             <picture className="m-auto w-full">
               <img
@@ -39,7 +39,6 @@ const ProductPreview: React.FC<ProductPreviewProps> = ({ props }) => {
             </p>
             <p className="text-center mt-4">{info.description}</p>
             <CtaButton bgColor="bg-[--dark-orange]" textColor="white" />
-            <p></p>
           </div>
         );
       })}
